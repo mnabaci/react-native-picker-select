@@ -1,12 +1,12 @@
 {
-    "name": "react-native-picker-select",
-    "version": "8.0.4",
+    "name": "@mnabaci/react-native-picker-select",
+    "version": "9.0.0",
     "description": "A Picker component for React Native which emulates the native <select> interfaces for each platform",
     "license": "MIT",
-    "author": "Michael Lefkowitz <lefkowitz.michael@gmail.com>",
+    "author": "Mehmet Abaci <mnabaci@gmail.com>",
     "repository": {
         "type": "git",
-        "url": "https://github.com/lawnstarter/react-native-picker-select.git"
+        "url": "https://github.com/mnabaci/react-native-picker-select.git"
     },
     "main": "src/index.js",
     "keywords": [
@@ -24,26 +24,23 @@
         "/src"
     ],
     "dependencies": {
-        "@react-native-picker/picker": "^1.8.3",
+        "@react-native-picker/picker": "^2.4.7",
         "lodash.isequal": "^4.5.0"
     },
     "devDependencies": {
-        "@types/react-native": "^0.60.22",
+        "@types/react-native": "^0.70.2",
         "babel-jest": "^23.6.0",
         "babel-preset-react-native": "^4.0.1",
-        "enzyme": "^3.7.0",
-        "enzyme-adapter-react-16": "^1.7.0",
-        "enzyme-to-json": "^3.3.5",
-        "eslint-config-ls-react": "https://github.com/lawnstarter/eslint-config-ls-react#3.0.0",
+        "eslint-config-react-app": "7.0.1",
         "husky": "^2.4.0",
         "jest": "^23.6.0",
         "prettier": "^2.0.5",
         "pretty-quick": "^2.0.1",
         "prop-types": "^15.7.2",
-        "react": "16.6.1",
-        "react-dom": "^16.6.1",
-        "react-native": "0.57.7",
-        "react-test-renderer": "^16.6.1"
+        "react": "18.1.0",
+        "react-dom": "18.1.0",
+        "react-native": "0.70.2",
+        "react-test-renderer": "18.1.0"
     },
     "scripts": {
         "test": "jest",
@@ -65,9 +62,6 @@
         "preset": "react-native",
         "setupFiles": [
             "./test/setup.js"
-        ],
-        "snapshotSerializers": [
-            "enzyme-to-json/serializer"
         ],
         "transformIgnorePatterns": [
             "node_modules/?!(@react-native-picker/picker)"
